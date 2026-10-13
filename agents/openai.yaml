@@ -1,0 +1,5 @@
+interface:
+  display_name: "Game System Designer"
+  short_description: "Game-system planning with rule, UI, configuration, and QA traceability"
+  default_prompt: "Use $game-system-designer to turn this feature request into a source-disciplined game-system plan. Confirm the project material library and player-visible boundaries before formal production."
+
