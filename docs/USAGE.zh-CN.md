@@ -6,6 +6,8 @@
 
 ## 安装
 
+以下步骤仅适用于 OpenAI Codex。DeepSeek Harness、Claude、Gemini CLI、Cursor、GitHub Copilot 及其他宿主的目录、调用命令和工具要求，请查看[多 AI 客户端兼容与安装须知](AI-COMPATIBILITY.zh-CN.md)。
+
 ### 手动安装
 
 1. 下载或克隆本仓库。
@@ -19,6 +21,8 @@
 4. 重新打开 Codex 任务，并使用 `$game-system-designer` 调用。
 
 也可以让支持 Skill 安装的 Codex 客户端从本 GitHub 仓库安装。
+
+安装成功只代表客户端能够读取 Skill；能否直接制作 Excel、流程图、UI 图片或读取 Figma，仍取决于当前客户端实际提供的工具。
 
 ## 首次使用前必须准备项目素材库
 
@@ -77,4 +81,6 @@ $game-system-designer 按本项目素材库优化 UI 操作规范，并制作关
 ## 能力差异
 
 流程图、Excel、Figma、图片生成或原生应用预览能力取决于使用者安装的 Codex 工具和连接。某项工具不可用时，Skill 应说明限制并提供可验证的替代交付，而不是声称已经完成对应验证。
+
+在其他 AI 中使用时，不要照搬 `$game-system-designer`、Codex 工具名或 Codex 目录。按照[兼容须知](AI-COMPATIBILITY.zh-CN.md)选择对应安装方式；不支持原生 Agent Skills 的客户端，需要手动提供 `SKILL.md` 与本次任务所需的参考文件。
 

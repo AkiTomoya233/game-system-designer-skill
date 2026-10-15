@@ -29,11 +29,14 @@ Record:
 - which categories exist or are missing;
 - the newest approved planning templates;
 - the actual configuration tables relevant to the feature;
+- field instructions, valid samples, separators, types, localization keys, and reward/item/resource dictionaries needed to interpret those tables;
 - likely same-system UI and reusable components;
 - known project profiles or style guides;
 - files that are examples only, inherited from another project, deprecated, or unverified.
 
 File presence does not prove runtime use. Do not claim a field, asset, component, or table is active without supporting project evidence.
+
+Treat configuration as project evidence, not universal knowledge. Table names, field semantics, separators, empty-value conventions, and runtime support learned in one project must not be silently reused in another project.
 
 ## Missing library content
 

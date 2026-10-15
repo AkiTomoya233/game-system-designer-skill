@@ -6,6 +6,8 @@ This skill supports game-feature requirement analysis, system rules, player flow
 
 ## Installation
 
+The steps below are specific to OpenAI Codex. For DeepSeek Harness, Claude, Gemini CLI, Cursor, GitHub Copilot, and other hosts, see the [multi-agent compatibility guide](AI-COMPATIBILITY.en.md).
+
 ### Manual installation
 
 1. Download or clone this repository.
@@ -19,6 +21,8 @@ This skill supports game-feature requirement analysis, system rules, player flow
 4. Start a new Codex task and invoke `$game-system-designer`.
 
 You may also ask a Codex client with skill-installation support to install the skill from this GitHub repository.
+
+Successful installation only means that the host can read the skill. Spreadsheet, diagram, UI-image, Figma, and native-preview work still requires matching tools in that host.
 
 ## Prepare a project material library first
 
@@ -77,4 +81,6 @@ Before publishing requirement documents, configuration, UI, art, or planning doc
 ## Capability differences
 
 Diagram, spreadsheet, Figma, image-generation, and native-application preview capabilities depend on the tools and connections installed in the user's Codex environment. When a tool is unavailable, the skill should disclose the limitation and provide a verifiable fallback instead of claiming that validation was completed.
+
+On other AI hosts, do not copy Codex paths, `$game-system-designer`, or Codex-specific tool names blindly. Follow the [compatibility guide](AI-COMPATIBILITY.en.md). Hosts without native Agent Skills support require `SKILL.md` and the references needed for the current task to be supplied manually.
 

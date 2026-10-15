@@ -22,6 +22,12 @@ If no library has been confirmed:
 
 Do not reuse a library binding from another project. Read [Project Library](references/project-library.md) for the directory model and fallback behavior.
 
+## Host capability gate
+
+The skill defines process and quality rules; it does not create tools that the current AI host does not expose. Before promising a formal deliverable, verify the capabilities actually required for that task: filesystem access, spreadsheet editing and reopening, editable diagrams, image generation or editing, Figma access, web research, and native application preview.
+
+If a required capability is unavailable, state the limitation before production and offer a verifiable fallback such as text specifications, wireframes, placeholders, or an unvalidated draft. Never claim that a file, image, native preview, or runtime check was completed when the corresponding tool was not run. Host-specific installation and invocation guidance belongs in `docs/AI-COMPATIBILITY.*.md`; do not hard-code one client's commands into the design rules.
+
 ## Evidence and scope
 
 - Separate information into `Confirmed`, `Reasonable inference`, and `TBD`.
@@ -110,6 +116,15 @@ Use the user's current template first. Otherwise follow [Planning Document Style
 8. UI operation specification
 
 The main body is the single source of truth for review and testing. Do not create duplicate UI, flow, configuration, or acceptance tabs unless the user explicitly requests a separate summary. Other artifacts must reference, not rewrite, the authoritative rule.
+
+Choose linked deliverables from the feature, not from habit:
+
+- player entry, navigation, operations, or state branches -> numbered interface flow plus an editable diagram and embedded preview;
+- player-facing pages or key visual states -> baseline UI plus only the necessary difference states;
+- tunable fields, tiers, formulas, reward pools, tasks, or live-ops parameters -> configuration delta, and an editable workbook only when actual configuration data is requested;
+- early collaborative layout work -> low-fidelity sketch rather than a falsely polished final UI.
+
+If an expected artifact is omitted, record the reason. All delivered artifacts must share the same terminology, state names, rule numbers, and confirmed values.
 
 ## Deliverable rules
 
