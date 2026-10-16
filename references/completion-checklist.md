@@ -17,8 +17,13 @@
 - The body remains the single source of truth; no unnecessary duplicate tabs were added.
 - Editable diagram and configuration sources are retained when applicable.
 - New UI and reusable components are versioned and archived separately without overwriting approved sources.
+- The feature's top-level deliverable directories exactly match the project-approved structure; required directories are present, no extra top-level directories were invented, and no loose files remain at the feature root.
+- Existing files were inventoried read-only before reorganization and classified as confirmed feature outputs, user-provided sources, unrelated artifacts, or uncertain ownership; only confirmed outputs were moved.
+- Historical batches remain below the approved directory structure and same-name history was preserved without overwrite.
+- Locked files were not force-closed or deleted; any validated target copy and retained source duplicate are disclosed in the handoff.
 - Spreadsheet text is visible; row heights, merged cells, formulas, images, and markers were checked in the actual export.
 - Wrapped and merged-cell text uses explicit row heights where automatic sizing is unreliable.
 - Stale sheet, version, image, and source-file references were searched after structural changes.
+- After output-path migration, text-based work scripts and verification notes were updated; obsolete output-path hits are zero and moved workbooks remain readable.
 - The handoff states confirmed conclusions, inferences, remaining unknowns, validation evidence, and residual risks.
 

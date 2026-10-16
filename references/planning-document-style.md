@@ -15,6 +15,22 @@ Use the user's current template when supplied. Otherwise use this default body:
 
 The body is the authoritative review and test source. Do not duplicate the same rules across summary, UI, flow, and acceptance tabs.
 
+## Deliverable archive
+
+Use the current project's approved deliverable-folder structure when one exists. Create the feature folder and its required top-level directories before generating new outputs. Completion requires an exact structural match: all required directories exist, no unapproved top-level directories were added, and the feature root contains no loose files.
+
+When consolidating existing work:
+
+- inventory files read-only before changing locations;
+- distinguish confirmed feature outputs from user-provided source material, unrelated artifacts, and uncertain ownership;
+- keep historical batches as subdirectories inside the approved structure rather than creating new top-level categories;
+- compare same-name files before acting and preserve both with clear historical suffixes when needed;
+- do not force-close applications or delete a locked source file; copy and validate when appropriate, then disclose the retained duplicate;
+- update scripts and verification notes that reference obsolete output locations;
+- verify the final directory set, zero loose root files, preserved history, readable workbooks, and zero stale output-path references.
+
+Do not claim that reorganization is complete while any of these checks remain unresolved.
+
 ## Rule writing
 
 - Use the visible hierarchy `1、` -> `（1）` -> `a、` for feature group, scenario/rule group, and independent condition/result unless the project's approved template establishes an equivalent convention.

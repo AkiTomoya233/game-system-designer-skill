@@ -133,6 +133,10 @@ If an expected artifact is omitted, record the reason. All delivered artifacts m
 - Keep editable sources for diagrams and configuration deliverables.
 - Do not overwrite source documents or earlier deliveries unless the user explicitly requests it.
 - After moving or removing sheets, images, diagrams, or source files, search for stale names and references.
+- When a project defines a deliverable-folder structure, treat the exact top-level directory set as an acceptance requirement. A folder named after the feature is not sufficient if required directories are missing, extra directories were introduced, or loose files remain at the feature root.
+- Before reorganizing existing deliverables, inventory them read-only and distinguish confirmed feature outputs, user-provided source material, unrelated artifacts, and items of uncertain ownership. Move only confirmed outputs; keep historical batches below the approved directory structure and never overwrite same-name history.
+- If a source file is locked, do not force-close the owning application or claim that the move succeeded. Copy and validate the target when appropriate, retain the source, and disclose the duplicate for later cleanup.
+- After path migration, update text-based work scripts and verification notes that still reference obsolete output locations. Verify the final directory set, zero loose root files, preserved history, readable workbooks, and zero stale output-path hits before declaring the archive complete.
 - Reopen exported spreadsheets; inspect formula errors, visible text, row heights, merged cells, images, markers, and editability in the native application when available.
 
 Use [Completion Checklist](references/completion-checklist.md) before handoff.
